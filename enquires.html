@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     PAGE: Enquiries (enquires.html)
+     DESCRIPTION: Allows visitors to submit an enquiry to
+     Mercedes-Benz via an embedded Google Form. The form
+     collects customer details and queries which are sent
+     directly to the business.
+     AUTHOR: [Andile Ndlovu]
+     STUDENT NUMBER: [ST10452270]
+     MODULE: WEDE5020
+     DATE:25 May 2026
+     ============================================================ -->
+
+<head>
+  <!-- Sets the character encoding so all characters display correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the page scale correctly on mobile and tablet screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Description shown in Google search results (SEO) -->
+  <meta name="description" content="Submit an enquiry to Mercedes-Benz South Africa.
+  Ask about vehicle availability, pricing, test drives, or financing options.">
+
+  <!-- Keywords to help search engines find this page (SEO) -->
+  <meta name="keywords" content="Mercedes-Benz enquiry, contact form, vehicle enquiry,
+  South Africa, test drive, financing">
+
+  <!-- Title shown in the browser tab -->
+  <title>Enquiries | Mercedes-Benz</title>
+
+  <!-- Links the external CSS stylesheet to this HTML page -->
+  <link rel="stylesheet" href="css_assets/mystyles.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: Contains the Mercedes-Benz logo banner and the main
+       navigation menu. Identical across all five pages.
+       ============================================================ -->
+  <header>
+
+    <!-- Site banner / logo image -->
+    <img src="images/Image1 Apr 17, 2026, 03_42_57 PM.png" alt="Mercedes-Benz Logo Banner">
+
+    <!-- ========================================================
+         NAVIGATION MENU: Links to all 5 pages of the website.
+         class="active" marks Enquiries as the current page.
+         ======================================================== -->
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <!-- Enquiries is the active/current page -->
+        <li><a href="enquires.html" class="active">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ===== END NAVIGATION ===== -->
+
+  </header>
+  <!-- ===== END HEADER ===== -->
+
+  <!-- ============================================================
+       MAIN: Unique content for the Enquiries page only.
+       Contains a page heading and an embedded Google Form.
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HEADING: The single h1 for this page — tells the user
+         what this page is for before the form loads.
+         ========================================================== -->
+    <h1>Enquiries</h1>
+
+    <!-- Brief instruction paragraph to guide the visitor -->
+    <p>
+      Please complete the form below to enquire about any of our vehicles, services,
+      or dealership offerings. We will get back to you as soon as possible.
+    </p>
+
+    <!-- ==========================================================
+         GOOGLE FORM SECTION: An embedded Google Form that allows
+         visitors to submit enquiries directly to Mercedes-Benz.
+         - width="640" and height="2760" are set to show the full
+           form without an internal scroll bar.
+         - frameborder="0" removes the visible iframe border.
+         - title attribute is required for accessibility so screen
+           readers can describe the iframe to the user.
+         - The fallback text "Loading..." shows if the iframe fails.
+         ========================================================== -->
+    <section>
+      <h2>Submit Your Enquiry</h2>
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScnX2Yp9Imta4KcUiTnyJ96swhuqb1GikCASXHO7kmR9je0rQ/viewform?embedded=true"
+        width="640"
+        height="2760"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Mercedes-Benz Customer Enquiries Form">
+        Loading form…
+      </iframe>
+
+    </section>
+    <!-- ===== END GOOGLE FORM SECTION ===== -->
+
+  </main>
+  <!-- ===== END MAIN CONTENT ===== -->
+
+  <!-- ============================================================
+       FOOTER: Appears on ALL five pages of the website.
+       Contains the copyright notice for Mercedes-Benz.
+       ============================================================ -->
+  <footer>
+    <p>Mercedes-Benz &copy;&trade; 2026</p>
+  </footer>
+  <!-- ===== END FOOTER ===== -->
+
+</body>
+</html>

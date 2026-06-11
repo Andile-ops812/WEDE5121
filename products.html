@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     PAGE: Products (products.html)
+     DESCRIPTION: Showcases the Mercedes-Benz model range available
+     in South Africa. Includes a brand tier table, model images,
+     pricing information, and dealership operating hours.
+     AUTHOR: [Andile Ndlovu]
+     STUDENT NUMBER: [ST10452270]
+     MODULE: WEDE5020
+     DATE:25 May 2026
+     ============================================================ -->
+
+<head>
+  <!-- Sets the character encoding so all characters display correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the page scale correctly on mobile and tablet screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Description shown in Google search results (SEO) -->
+  <meta name="description" content="Browse the Mercedes-Benz model range available in
+  South Africa — including G63, C63, and C200 AMG. View pricing and operating hours.">
+
+  <!-- Keywords to help search engines find this page (SEO) -->
+  <meta name="keywords" content="Mercedes-Benz models, G63, C63, C200 AMG, Maybach,
+  AMG, car prices, South Africa, luxury vehicles">
+
+  <!-- Title shown in the browser tab -->
+  <title>Products | Mercedes-Benz</title>
+
+  <!-- Links the external CSS stylesheet to this HTML page -->
+  <link rel="stylesheet" href="css_assets/mystyles.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: Contains the Mercedes-Benz logo banner and the main
+       navigation menu. Identical across all five pages.
+       ============================================================ -->
+  <header>
+
+    <!-- Site banner / logo image -->
+    <img src="images/Image1 Apr 17, 2026, 03_42_57 PM.png" alt="Mercedes-Benz Logo Banner">
+
+    <!-- ========================================================
+         NAVIGATION MENU: Links to all 5 pages of the website.
+         class="active" marks Products as the current page.
+         ======================================================== -->
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <!-- Products is the active/current page -->
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="enquires.html">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ===== END NAVIGATION ===== -->
+
+  </header>
+  <!-- ===== END HEADER ===== -->
+
+  <!-- ============================================================
+       MAIN: Unique content for the Products page only.
+       Divided into two sections: Brand Tiers and Models Showcase.
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HEADING: The single h1 for this page.
+         ========================================================== -->
+    <h1>Our Products</h1>
+
+    <!-- ==========================================================
+         BRAND TIERS SECTION: A table showing the three main
+         sub-brands within the Mercedes-Benz group:
+         Mercedes-Benz (standard), AMG (performance), and
+         Maybach (ultra-luxury).
+         ========================================================== -->
+    <section>
+      <h2>Our Recommendations</h2>
+
+      <!-- Brand tier comparison table.
+           Each column represents a different brand tier.
+           Rows would be added here as product data grows. -->
+      <table border="1" width="600">
+        <caption>Mercedes-Benz Brand Tiers</caption>
+        <!-- Header row: one column per brand tier -->
+        <tr>
+          <th>Mercedes-Benz</th>
+          <th>AMG</th>
+          <th>Maybach</th>
+        </tr>
+        <!-- Standard / entry luxury tier -->
+        <tr>
+          <td>C-Class, E-Class, GLE</td>
+          <td>C63, G63, GT</td>
+          <td>S580, GLS 600</td>
+        </tr>
+      </table>
+
+    </section>
+    <!-- ===== END BRAND TIERS SECTION ===== -->
+
+    <!-- ==========================================================
+         MODELS SHOWCASE SECTION: Displays product images, a list
+         of available models with year ranges, pricing, and
+         dealership operating hours.
+         ========================================================== -->
+    <section>
+      <h2>Our Mercedes-Benz Models</h2>
+
+      <!-- --------------------------------------------------------
+           MODEL IMAGES: Three product images showing different
+           Mercedes-Benz models. Each has descriptive alt text
+           for accessibility and SEO.
+           -------------------------------------------------------- -->
+      <img src="images/2020-mercedes-gls63-1596051570-jpg.jpg"
+           alt="Mercedes-Benz GLS63 2020 — full-size luxury SUV">
+      <img src="images/mercedes-benz-g580-with-eq-technology-electric-g-class-feature-image-1.jpg"
+           alt="Mercedes-Benz G580 EQ Technology — electric G-Class">
+      <img src="images/3f52573c6b319a1f377d0174608fb5a6bc00a0a8.jpg"
+           alt="Mercedes-Benz classic model">
+      <!-- ===== END MODEL IMAGES ===== -->
+
+      <!-- --------------------------------------------------------
+           MODELS LIST: Unordered list of available models and the
+           year range during which they are/were sold. Uses <ul>
+           for semantic markup — NOT <pre> (which is for code only).
+           -------------------------------------------------------- -->
+      <h3>Available Models</h3>
+      <ul>
+        <li>Mercedes-Benz G63 (2019 – 2026)</li>
+        <li>Mercedes-Benz C63 (2023 – 2025)</li>
+        <li>Mercedes-Benz C200 AMG (2017 – 2024)</li>
+      </ul>
+      <!-- ===== END MODELS LIST ===== -->
+
+      <!-- --------------------------------------------------------
+           PRICING: Recommended retail prices in South African Rand
+           for each model listed above.
+           -------------------------------------------------------- -->
+      <h3>Purchase Price</h3>
+      <ul>
+        <li>Mercedes-Benz G63 — R5 100 000</li>
+        <li>Mercedes-Benz C63 — R830 000</li>
+        <li>Mercedes-Benz C200 AMG — R500 200</li>
+      </ul>
+      <!-- ===== END PRICING ===== -->
+
+      <!-- --------------------------------------------------------
+           OPERATING HOURS: Displays the dealership trading hours
+           across the week. Sunday is listed as closed.
+           -------------------------------------------------------- -->
+      <h3>Operating Hours</h3>
+      <ul>
+        <li>Monday – Friday: 08:00 – 17:00</li>
+        <li>Saturday: 08:00 – 14:00</li>
+        <li>Sunday: Closed</li>
+      </ul>
+      <!-- ===== END OPERATING HOURS ===== -->
+
+      <!-- Note informing visitors that test drives are available -->
+      <p><strong>Test driving is available at all Mercedes-Benz branches.</strong></p>
+
+    </section>
+    <!-- ===== END MODELS SHOWCASE SECTION ===== -->
+
+  </main>
+  <!-- ===== END MAIN CONTENT ===== -->
+
+  <!-- ============================================================
+       FOOTER: Appears on ALL five pages of the website.
+       Contains the copyright notice for Mercedes-Benz.
+       ============================================================ -->
+  <footer>
+    <p>Mercedes-Benz &copy;&trade; 2026</p>
+  </footer>
+  <!-- ===== END FOOTER ===== -->
+
+</body>
+</html>

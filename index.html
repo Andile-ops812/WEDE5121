@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     PAGE: Homepage (index.html)
+     DESCRIPTION: The main landing page for Mercedes-Benz.
+     Includes the site header, navigation menu, a welcome
+     introduction, a branch locations table, a call-to-action
+     section, and a consistent footer.
+     AUTHOR: [Andile Ndlovu]
+     STUDENT NUMBER: [ST10452270]
+     MODULE: WEDE5020
+     DATE:25 May 2026
+     ============================================================ -->
+
+<head>
+  <!-- Sets the character encoding so all characters display correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the page scale correctly on mobile and tablet screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" The mercedes benz company offers innovation and complex cars">
+
+  <!-- Description shown in Google search results (SEO) -->
+  <meta name="description" content="Mercedes-Benz South Africa — Discover luxury vehicles,
+  browse our model range, and find your nearest dealership in Gauteng and Limpopo.">
+
+  <!-- Keywords to help search engines find this page (SEO) -->
+  <meta name="keywords" content="Mercedes-Benz, luxury cars, AMG, Maybach, Sandton,
+  Polokwane, South Africa, vehicles, dealership">
+
+  <!-- Title shown in the browser tab -->
+  <title>Home | Mercedes-Benz</title>
+
+  <!-- Links the external CSS stylesheet to this HTML page -->
+  <link rel="stylesheet" href="css_assets/mystyles.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: Contains the Mercedes-Benz logo banner at the top
+       and the main navigation menu below it. This header appears
+       on ALL five pages of the website.
+       ============================================================ -->
+  <header>
+
+    <!-- Site banner / logo image -->
+    <img src="images/Image1 Apr 17, 2026, 03_42_57 PM.png" alt="Mercedes-Benz Logo Banner">
+
+    <!-- ========================================================
+         NAVIGATION MENU: Links to all 5 pages of the website.
+         class="active" is added to the current page link so it
+         is visually highlighted in the navigation bar.
+         ======================================================== -->
+    <nav>
+      <ul class="navigation">
+        <!-- Home is the active/current page -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquires.html">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ===== END NAVIGATION ===== -->
+
+  </header>
+  <!-- ===== END HEADER ===== -->
+
+  <!-- ============================================================
+       MAIN: The unique content for the homepage only.
+       Other pages will have different content inside <main>.
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HEADING: The single h1 for this page — used only once
+         per page as required by HTML best practice and accessibility
+         guidelines. Describes the overall purpose of the page.
+         ========================================================== -->
+    <h1>Welcome to Mercedes-Benz</h1>
+
+    <!-- ==========================================================
+         INTRODUCTION SECTION: Two paragraphs introducing the brand
+         and its philosophy. Sits inside a .container grid that
+         displays content in three columns on desktop, collapsing
+         to a single column on mobile.
+         ========================================================== -->
+    <div class="container">
+
+      <!-- Brand introduction paragraph -->
+      <div>
+        <p>
+          We introduce you to the world of Mercedes-Benz, where luxury meets innovation.
+          Renowned for its timeless design, cutting-edge technology, and exceptional performance,
+          Mercedes-Benz sets the standard in the automotive industry.
+          From elegant sedans to powerful SUVs and electric vehicles, every model is crafted
+          with precision and excellence.
+        </p>
+      </div>
+
+      <!-- Tagline / brand motto -->
+      <div>
+        <p>
+          Explore our range and experience the perfect blend of comfort, safety, and driving
+          pleasure. Mercedes-Benz — The Best or Nothing.
+        </p>
+      </div>
+
+      <!-- ==========================================================
+           CALL-TO-ACTION SECTION: Highlights the brand experience
+           and encourages visitors to explore further. Uses h2 because
+           it is a subsection heading, not the main page heading.
+           ========================================================== -->
+      <div class="cta-container">
+        <h2>Experience Mercedes-Benz Luxury</h2>
+        <p>Discover innovation, performance, and timeless design. Your next drive starts here.</p>
+      </div>
+
+    </div>
+    <!-- ===== END INTRODUCTION SECTION ===== -->
+
+    <!-- ==========================================================
+         PAYMENT INFORMATION SECTION: Explains payment options
+         available to customers at all branch locations.
+         ========================================================== -->
+    <div>
+      <p>
+        You can pay your fees upfront or in monthly instalments.<br>
+        Please note that application and deposit fees are non-refundable.<br>
+        Mercedes-Benz branches operate on both cash and card payments.
+      </p>
+    </div>
+    <!-- ===== END PAYMENT SECTION ===== -->
+
+    <!-- ==========================================================
+         BRANCH LOCATIONS TABLE: Displays the two current Mercedes-Benz
+         dealership branches and the province they are located in.
+         border="1" adds a visible border for clarity.
+         ========================================================== -->
+    <table border="1" width="400">
+      <caption>Mercedes-Benz Branches</caption>
+      <!-- Table header row -->
+      <tr>
+        <th>Branch</th>
+        <th>Province</th>
+      </tr>
+      <!-- Gauteng branch row -->
+      <tr>
+        <td>Pretoria</td>
+        <td>Gauteng</td>
+      </tr>
+      <!-- Limpopo branch row -->
+      <tr>
+        <td>Polokwane</td>
+        <td>Limpopo</td>
+      </tr>
+    </table>
+    <!-- ===== END BRANCH TABLE ===== -->
+
+  </main>
+  <!-- ===== END MAIN CONTENT ===== -->
+
+  <!-- ============================================================
+       FOOTER: Appears on ALL five pages of the website.
+       Contains the copyright notice for Mercedes-Benz.
+       ============================================================ -->
+  <footer>
+    <p>Mercedes-Benz &copy;&trade; 2026</p>
+  </footer>
+  <!-- ===== END FOOTER ===== -->
+
+</body>
+</html>

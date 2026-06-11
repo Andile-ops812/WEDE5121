@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     PAGE: About Us (about_us.html)
+     DESCRIPTION: Provides background on the Mercedes-Benz brand,
+     including the company history, vision, mission, and a brief
+     introduction to key team members.
+     AUTHOR: [Andile Ndlovu]
+     STUDENT NUMBER: [ST10452270]
+     MODULE: WEDE5020
+     DATE:25 May 2026
+     ============================================================ -->
+
+<head>
+  <!-- Sets the character encoding so all characters display correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the page scale correctly on mobile and tablet screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Description shown in Google search results (SEO) -->
+  <meta name="description" content="Learn about the history, vision, mission, and team
+  behind Mercedes-Benz South Africa.">
+
+  <!-- Keywords to help search engines find this page (SEO) -->
+  <meta name="keywords" content="Mercedes-Benz, about us, history, Karl Benz, mission,
+  vision, team, luxury cars">
+
+  <!-- Title shown in the browser tab -->
+  <title>About Us | Mercedes-Benz</title>
+  <!-- jQuery library and files that load lightbox, -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- External javascript saved in js_assets folder -->
+  <script src="js_assets/myjavascript.js"></script>
+
+  <!-- Lightbox2 CSS - Provides the styling for the Lightbox, Image positioning, Next/Previous 
+  buttons, Close button (×), Captions. Without this file, the Lightbox may still open but will be unstyled.-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+  <!--Lightbox2 js function (was build using jQuery, to function it needs jQuery to be loaded 
+  first). Contains the Lightbox functionality, Opening images in a popup, Closing images,
+  Gallery navigation, Image animations-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- Links the external CSS stylesheet to this HTML page -->
+  <link rel="stylesheet" href="css_assets/mystyles.css">
+
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: Contains the Mercedes-Benz logo banner and the main
+       navigation menu. Identical across all five pages.
+       ============================================================ -->
+        <div class="gallery">
+        <a href="images/gallery3_charlie.jpg" data-lightbox="mygallery" data-title="charlie The Cat">
+           <img src="images/gallery3_charlie_large.JPG" alt="charlie the two toned Cat" />
+         </a>
+        
+        
+  <header>
+
+    <!-- Site banner / logo image -->
+    <img src="images/Image1 Apr 17, 2026, 03_42_57 PM.png" alt="Mercedes-Benz Logo Banner">
+
+    <!-- ========================================================
+         NAVIGATION MENU: Links to all 5 pages of the website.
+         class="active" marks About Us as the current page.
+         ======================================================== -->
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <!-- About is the active/current page -->
+        <li><a href="about_us.html" class="active">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquires.html">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ===== END NAVIGATION ===== -->
+
+  </header>
+  <!-- ===== END HEADER ===== -->
+
+  <!-- ============================================================
+       MAIN: Unique content for the About Us page only.
+       Divided into four semantic <section> elements:
+       History, Vision, Mission, and Team Members.
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HEADING: The single h1 for this page — describes the
+         overall topic of the page for users and screen readers.
+         ========================================================== -->
+    <h1>About Us</h1>
+
+    <!-- ==========================================================
+         HISTORY SECTION: A brief overview of how Mercedes-Benz
+         was founded, starting with Karl Benz's 1886 invention of
+         the first petrol-powered automobile.
+         ========================================================== -->
+    <section>
+      <h2>Our History</h2>
+      <!-- Paragraph 1: Origin of the brand -->
+      <p>
+        Mercedes-Benz is one of the world's most well-known luxury automobile manufacturers.
+        The company's history dates to the invention of the first petrol-powered automobile
+        by Karl Benz in 1886. Benz created the three-wheeled Benz Patent-Motorwagen, which is
+        widely considered the first practical automobile.
+      </p>
+      <!-- Paragraph 2: Origin of the "Mercedes" name -->
+      <p>
+        In 1901, the first car branded "Mercedes" was introduced after an investor suggested
+        naming the vehicle after his daughter, Mercedes. The name quickly became associated
+        with innovative and high-performance vehicles.
+      </p>
+    </section>
+    <!-- ===== END HISTORY SECTION ===== -->
+
+    <!-- ==========================================================
+         VISION SECTION: Describes what Mercedes-Benz aspires to
+         achieve in terms of brand loyalty and sustainable mobility.
+         ========================================================== -->
+    <section>
+      <h2>Our Vision</h2>
+      <!-- Vision statement paragraph 1 -->
+      <p>
+        Mercedes-Benz aims to enhance brand loyalty by offering seamless access to product
+        information, services, and personalised features.
+      </p>
+      <!-- Vision statement paragraph 2 -->
+      <p>
+        To lead the future of sustainable mobility while combining luxury, safety,
+        and innovation.
+      </p>
+    </section>
+    <!-- ===== END VISION SECTION ===== -->
+
+    <!-- ==========================================================
+         MISSION SECTION: Explains Mercedes-Benz's commitment to
+         customer satisfaction, quality, and online experience.
+         ========================================================== -->
+    <section>
+      <h2>Our Mission</h2>
+      <!-- Mission statement paragraph 1 -->
+      <p>
+        Our mission is to provide customers with an intuitive, informative, and engaging
+        online experience that reflects the company's dedication to excellence and customer
+        satisfaction.
+      </p>
+      <!-- Mission statement paragraph 2 -->
+      <p>
+        To deliver world-class vehicles and experiences that delight customers,
+        inspire innovation, and uphold the highest quality standards.
+      </p>
+    </section>
+    <!-- ===== END MISSION SECTION ===== -->
+
+    <!-- ==========================================================
+         TEAM SECTION: Displays a team photo followed by a list of
+         key personnel and their roles within the company.
+         ========================================================== -->
+    <section>
+      <h2>Our Team</h2>
+
+      <!-- Team group photo — alt text describes image for screen readers -->
+      <img src="images/Image Apr 17, 2026 1.png" alt="The Mercedes-Benz South Africa team">
+
+      <!-- Subheading for the names list -->
+      <h3>Team Members and Job Descriptions</h3>
+
+      <!-- Unordered list of team members and their roles.
+           <strong> bolds the name to visually separate it from the role. -->
+      <ul>
+        <li><strong>John Smith</strong> – CEO</li>
+        <li><strong>Anna Muller</strong> – Chief Designer</li>
+        <li><strong>Peter Johnson</strong> – Head of Engineering</li>
+        <li><strong>Lisa Brown</strong> – Marketing Director</li>
+      </ul>
+
+    </section>
+    <!-- ===== END TEAM SECTION ===== -->
+
+  </main>
+  <!-- ===== END MAIN CONTENT ===== -->
+
+  <!-- ============================================================
+       FOOTER: Appears on ALL five pages of the website.
+       Contains the copyright notice for Mercedes-Benz.
+       ============================================================ -->
+  <footer>
+    <p>Mercedes-Benz &copy;&trade; 2026</p>
+  </footer>
+  <!-- ===== END FOOTER ===== -->
+
+</body>
+</html>

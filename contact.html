@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     PAGE: Contact (contact.html)
+     DESCRIPTION: Provides contact details, a contact form,
+     and embedded Google Maps for both the Gauteng (Sandton)
+     and Limpopo (Polokwane) Mercedes-Benz branch locations.
+     AUTHOR: [Andile Ndlovu]
+     STUDENT NUMBER: [ST10452270]
+     MODULE: WEDE5020
+     DATE:25 May 2026
+     ============================================================ -->
+
+<head>
+  <!-- Sets the character encoding so all characters display correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the page scale correctly on mobile and tablet screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Description shown in Google search results (SEO) -->
+  <meta name="description" content="Contact Mercedes-Benz South Africa. Find our branch
+  addresses, phone number, email, and maps for Sandton (Gauteng) and Polokwane (Limpopo).">
+
+  <!-- Keywords to help search engines find this page (SEO) -->
+  <meta name="keywords" content="Mercedes-Benz contact, Sandton dealership, Polokwane
+  dealership, South Africa, address, phone, email, map">
+
+  <!-- Title shown in the browser tab -->
+  <title>Contact | Mercedes-Benz</title>
+
+  <!-- Links the external CSS stylesheet to this HTML page -->
+  <link rel="stylesheet" href="css_assets/mystyles.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: Contains the Mercedes-Benz logo banner and the main
+       navigation menu. Identical across all five pages.
+       ============================================================ -->
+  <header>
+
+    <!-- Site banner / logo image -->
+    <img src="images/Image1 Apr 17, 2026, 03_42_57 PM.png" alt="Mercedes-Benz Logo Banner">
+
+    <!-- ========================================================
+         NAVIGATION MENU: Links to all 5 pages of the website.
+         class="active" marks Contact as the current page.
+         ======================================================== -->
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquires.html">Enquiries</a></li>
+        <!-- Contact is the active/current page -->
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ===== END NAVIGATION ===== -->
+
+  </header>
+  <!-- ===== END HEADER ===== -->
+
+  <!-- ============================================================
+       MAIN: Unique content for the Contact page only.
+       Divided into two sections:
+       1. Contact details and contact form
+       2. Branch locations with embedded Google Maps
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HEADING: The single h1 for this page.
+         ========================================================== -->
+    <h1>Contact Us</h1>
+
+    <!-- ==========================================================
+         CONTACT DETAILS AND FORM SECTION:
+         Displays address, phone, and email info in three columns,
+         followed by a contact form. Layout is handled by CSS using
+         the .contact-container and .contact-info classes.
+         ========================================================== -->
+    <section class="contact-container">
+      <h2>Get In Touch</h2>
+
+      <!-- Contact info row: three info boxes side by side on desktop,
+           stacked vertically on mobile via the media query in mystyles.css -->
+      <div class="contact-info">
+
+        <!-- Physical address box -->
+        <div class="info-box">
+          <h3>Address</h3>
+          <address>
+            Mercedes-Benz Sandton,<br>
+            92 Rivonia Rd,<br>
+            Wierda Valley,<br>
+            Sandton, 2169
+          </address>
+        </div>
+
+        <!-- Telephone number box -->
+        <div class="info-box">
+          <h3>Phone</h3>
+          <!-- tel: link makes the number clickable on mobile devices -->
+          <p><a href="tel:+27800133355">+27 800 133 355</a></p>
+        </div>
+
+        <!-- Email address box -->
+        <div class="info-box">
+          <h3>Email</h3>
+          <!-- mailto: link opens the default email client -->
+          <p><a href="mailto:netmaster@infovan.co.za">netmaster@infovan.co.za</a></p>
+        </div>
+
+      </div>
+      <!-- ===== END CONTACT INFO ROW ===== -->
+
+      <!-- --------------------------------------------------------
+           CONTACT FORM: Collects visitor name, email, subject,
+           and message. All fields have placeholder text to guide
+           the user. name and email fields are marked required.
+           The form currently has no action attribute — this would
+           be connected to a back-end handler or service in Part 3.
+           -------------------------------------------------------- -->
+      <form>
+        <!-- Full name input -->
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <!-- Email address input — browser validates email format automatically -->
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <!-- Subject / topic of message -->
+        <input type="text" name="subject" placeholder="Subject">
+
+        <!-- Multi-line message area -->
+        <textarea name="message" placeholder="Your Message"></textarea>
+
+        <!-- Submit button — sends the form when clicked -->
+        <button type="submit">Send Message</button>
+      </form>
+      <!-- ===== END CONTACT FORM ===== -->
+
+    </section>
+    <!-- ===== END CONTACT DETAILS AND FORM SECTION ===== -->
+
+    <!-- ==========================================================
+         BRANCH LOCATIONS SECTION: Displays two sections, one for
+         each Mercedes-Benz branch. Each section contains an
+         address in a semantic <address> tag and an embedded
+         Google Map iframe.
+         ========================================================== -->
+
+    <!-- Gauteng branch -->
+    <section>
+      <h2>Gauteng Branch — Sandton</h2>
+
+      <!-- <address> is a semantic HTML element for contact/location info -->
+      <address>
+        Mercedes-Benz Sandton,<br>
+        92 Rivonia Rd,<br>
+        Wierda Valley,<br>
+        Sandton, 2169
+      </address>
+
+      <!-- Embedded Google Map showing the Sandton branch location.
+           - width and height set the visible map size.
+           - style="border: 0;" removes the default iframe border.
+           - loading="lazy" defers loading until the user scrolls near it,
+             improving page performance.
+           - title attribute is required for screen reader accessibility.
+           - referrerpolicy prevents leaking the page URL to Google Maps. -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d57308.9112770326!2d28.016788961321204!3d-26.137836591816267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-26.171521499999997!2d28.0400246!4m5!1s0x1e957323eb345e71%3A0xc6a2ab73ddfc1ad0!2sMercedes-Benz%20Sandton%2C%2092%20Rivonia%20Rd%2C%20Wierda%20Valley%2C%20Sandton%2C%202169!3m2!1d-26.1110282!2d28.0558928!5e0!3m2!1sen!2sza!4v1776339254939!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Map — Mercedes-Benz Sandton, Gauteng">
+      </iframe>
+
+    </section>
+    <!-- ===== END GAUTENG BRANCH ===== -->
+
+    <!-- Limpopo branch -->
+    <section>
+      <h2>Limpopo Branch — Polokwane</h2>
+
+      <address>
+        Mercurius Motors Polokwane,<br>
+        Cnr R101 &amp; Nelson Mandela Dr,<br>
+        Polokwane, 0699
+      </address>
+
+      <!-- Embedded Google Map showing the Polokwane branch location.
+           Same attributes as the Sandton map above — see comments there. -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1850832.340984092!2d27.422779709802196!3d-25.03723283179384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-26.171521499999997!2d28.0400246!4m5!1s0x1ec6d77712d448e9%3A0x27a2cda01d5230cd!2sMercurius%20Motors%20Polokwane%2C%20Cnr%20R101%20%26%2C%20Nelson%20Mandela%20Dr%2C%20Polokwane%2C%200699!3m2!1d-23.914463599999998!2d29.4438802!5e0!3m2!1sen!2sza!4v1776434606526!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Map — Mercurius Motors Polokwane, Limpopo">
+      </iframe>
+
+    </section>
+    <!-- ===== END LIMPOPO BRANCH ===== -->
+
+  </main>
+  <!-- ===== END MAIN CONTENT ===== -->
+
+  <!-- ============================================================
+       FOOTER: Appears on ALL five pages of the website.
+       Contains the copyright notice for Mercedes-Benz.
+       ============================================================ -->
+  <footer>
+    <p>Mercedes-Benz &copy;&trade; 2026</p>
+  </footer>
+  <!-- ===== END FOOTER ===== -->
+
+</body>
+</html>
